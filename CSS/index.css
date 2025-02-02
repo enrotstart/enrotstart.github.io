@@ -1,0 +1,381 @@
+/* Estilos Universales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del HTML y Body */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-size: 16px;
+}
+
+/* Estilos Base de los elementos */
+ .cont_video_fondo, .outline_fondo {
+    max-width: 1290px;
+    margin: auto;
+}
+
+h2 { font-size: 2.4rem;}
+h3 { font-size: 1.8rem;     color: rgb(180, 145, 47);}
+h4 { font-size: 1.6rem;}
+
+p { font-size: 1.1rem;}
+
+ol, ul { list-style: none;}
+
+a { text-decoration: none;}
+
+img { max-width: 100%;}
+
+/* --- Contenedor Principal --- */
+
+
+
+/* --- Video de Fono --- */
+
+.cont_video_fondo {
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.cont_video_fondo > video {
+    min-height: 100vh;
+}
+
+/* --- Filtro o Outline --- */
+
+.outline_fondo {
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.548);
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+/* --- Header --- */
+
+#header {
+
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 0 10px;
+
+    transition: 1s;
+
+    container-type: inline-size;
+    container-name: header;
+}
+
+.header__container {
+    display: flex;
+    justify-content: end;
+
+    padding: 12px 10px;
+
+}
+
+.header_outline {
+    
+    background-color: #000000;
+    backdrop-filter: blur(50px);
+    
+    background-image: url(../MEDIA/IMG/black-370118_1280.png);
+    background-attachment: fixed;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Boton Menu del Header */
+
+#boton_menu {
+    display: none;
+}
+
+.header__label-boton img {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+.header__nav {
+
+
+    justify-content: center;
+    width: 75%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0), #1b1b1b);
+    background-image: url(../MEDIA/IMG/black-370118_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: none;
+    position: absolute;
+    z-index: 1100;
+
+    top: 0;
+    left: 0;
+    
+}
+
+#boton_menu:checked ~ .header__nav {
+    display: flex;
+}
+
+
+.header__nav--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 150px 10px;
+}
+
+.header__nav--list--item {
+    font-size: 1.6rem;
+}
+
+.header__nav--list--item a{
+    color: #fff;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+.header__nav--list--item a:hover{
+    text-decoration: underline;
+}
+
+/* --- Header Queris ---  */
+
+@container header (min-width: 700px) {
+
+    .header__label-boton img {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto !important;
+        background: transparent !important;
+    }
+    
+    .header__nav--list {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        padding: 12px 10px;
+        width: auto;
+        height: auto;
+
+    }
+
+    .header__nav--list--item {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* --- Header END --- */
+
+
+/* --- Hero --- */
+
+.section__hero {
+    height: 90vh;
+}
+
+.hero__container {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #fff;
+}
+
+/* --- --- --- --- --- --- */
+
+.cont--logo {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    margin-left: 10px;
+
+    padding: 4px 10px;
+    color: #fff;
+    width: fit-content;
+}
+
+.cont--logo > img {
+    width: 64px;
+    margin-right: 3px;
+    opacity: 0.7;
+    position: relative;
+
+}
+
+.cont--logo > p {
+    font-size: 1.1rem;
+}
+
+/* --- --- --- --- --- --- */
+
+.hero__p_entidad {
+    margin-left: 10px;
+}
+
+/* --- --- --- --- --- --- */
+
+.hero__boton {
+    margin-top: 180px;
+    margin-left: 10px;
+}
+
+.hero__boton > a {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    color: #fff;
+}
+
+/* --- --- --- --- --- --- */
+
+
+
+/* --- Section Sobre Nosotros --- */
+
+.section__nosotros {
+    background-color: #3d3d3d;
+    background-image: url(../MEDIA/IMG/background-5035258_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #e4e4e4;
+    
+    padding: 60px 20px;
+}
+
+.nosotros__data--info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros__data--info1 > h3 {
+    font-size: 2.5rem;
+}
+
+.nosotros__cont {
+    container-type: inline-size;
+    container-name: nosotros_data;
+}
+
+.nosotros__data {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+}
+
+.nosotros__data > div {
+    background-color: #00000011;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+.nosotros__data__img {
+    max-width: 400px;
+    
+}
+
+@container nosotros_data (min-width: 500px) {
+    
+    .nosotros__data {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .nosotros__data__img {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+    }
+}
+
+/* --- Contacto --- */
+
+.section__contacto{
+    background: linear-gradient(to left, #acacac,#292929);
+    color: #fff;
+}
+
+.contacto__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 120px 20px;
+}
+
+.contacto__container span {
+    font-weight: 800;
+}
+
+.contacto__container p {
+    font-size: 1.5rem;
+}
+
+/* --- Footer --- */
+
+.footer {
+    color: #fff;
+    background-color: #222;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .cont--logo {
+        margin-left: 32px;
+    }
+
+    .section__hero {
+        margin-left: 32px;
+    }
+
+    .hero__slogan h2{
+        font-size: 4rem;
+    }
+}
