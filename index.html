@@ -1,55 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Enrot Start">
+    <meta name="description" content="PENDIENTE">
+    <meta name="keywords" content="Enrot Star, Marketing Digital, Asesoria Comercial">
     <meta name="author" content="Manuel Del Rio Socorro">
     <title>Enrot Star</title>
+    <link rel="stylesheet" href="CSS/fuentes.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <script src="JS/codigo_JS_header.js"></script>
+    <script src="JS/js_header.js"></script>
 </head>
 <body>
     <!-- Contenedor Principal -->
-    <div class="contenedor_principal">
-        <!-- Video de Fondo -->
-        <div class="cont_video_fondo">
-            <video muted autoplay loop src="MEDIA/Sala_de_Negocios.mp4"></video>
+    <div class="contenedor__principal">
+        <!-- Video de Fono -->
+        <div class="video_de_fondo__container">
+            <div class="videoFondo__outline"></div>
+            <div class="videoFondo">
+                <video muted autoplay loop src="Media/video_fondo.mp4">Tu Navegador No Soporta Video</video>
+            </div>
         </div>
-        <!-- Filtro para el Fondo |Outline| -->
-        <div class="outline_fondo"></div>
-
         <!-- Header -->
-        <header id="header">
-            <div class="header__container">
-                <input type="checkbox" name="botonMenu" id="boton_menu">
-                <label class="header__label-boton" for="boton_menu"><img src="MEDIA/IMG/menu.svg" alt="Menu Desplegable"></label>
-                <!-- Barra de Navegacion -->
+        <header class="header">
+            <div class="header__cont">
+                <div class="header__logo">
+                    <img src="Media/IMG/Header/logo.jpg" alt="Logo de Enrot Star">
+                    <p>ENROT START <br>TRANSI VIP</p>
+                </div>
+                <label class="header__label" for="boton_menu"><img src="Media/IMG/Header/menu.svg" alt="Menu Desplegable"></label>
+                <input type="checkbox" id="boton_menu">
                 <nav class="header__nav">
+                    <div class="header__nav__contLogo">
+                        <img src="Media/IMG/Header/logo.jpg" alt="Logo de Enrot Star">
+                    </div>
                     <ul class="header__nav--list">
-                        <li class="header__nav--list--item"><a href="#">Home</a></li>
+                        <li class="header__nav--list--item"><a href="#home">Home</a></li>
                         <li class="header__nav--list--item"><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li class="header__nav--list--item"><a href="#programa">Programa</a></li>
                         <li class="header__nav--list--item"><a href="#contacto">Contacto</a></li>
                     </ul>
+                    <div class="header__nav__copyright">
+                        <p>&copy; Copyright: Derechos Recvados Enrot Start 2025</p>
+                    </div>
                 </nav>
             </div>
         </header>
-        <!-- Logo -->
-        <div class="cont--logo">
-            <img src="MEDIA/IMG/logo2.jpg" alt="Logo de Enrot Start">
-            <p>Enrot Star <br>Transi VIP</p>
-        </div>
         <!-- Section Hero -->
-        <section class="section__hero">
+        <section id="home" class="section__hero">
             <div class="hero__container">
+                <div class="hero__logo">
+                    <img src="Media/IMG/Header/logo.jpg" alt="Logo de Enrot Star">
+                    <p>ENROT START <br>TRANSI VIP</p>
+                </div>
                 <div class="hero__p_entidad">
                     <p>Asesor Comercial</p>
                 </div>
                 <div class="hero__slogan">
-                    <h2>Conquista el <br>comercio de cero al <br>exito.</h2>
+                    <h2>Conquista el <br>comercio de cero al<br>exito.</h2>
                 </div>
-                <div class="hero__boton">
-                    <a href="#">Contacto</a>
+                <div class="hero__contactar">
+                    <a href="#contacto">Contactame</a>
                 </div>
             </div>
         </section>
@@ -62,7 +73,7 @@
                         <p>Somos una organización lider en el sector de ventas, marketing digital y desarollo de equipos altamente competitivos con un enfoque en bienes de consumo y servicios. Desde nuestra fundación, no hemos dedicado a ofrecer soluciones innovadoras y personalizadas para satisfacer las necesidades de nuestros clientes.</p>
                     </div>
                     <div class="nosotros__data__img">
-                        <img src="MEDIA/IMG/equipo.jpg" alt="Equipo de Enrot Start">
+                        <img src="Media/IMG/AcercaDeNosotros/equipo.jpg" alt="Equipo de Enrot Start">
                     </div>
                     <div class="nosotros__data--info2">
                         <h3>Nuestra Mision</h3>
@@ -75,6 +86,20 @@
                 </div>
             </div>
         </section>
+        <!-- Section Programa -->
+        <section id="programa" class="section__programa">
+            <div class="programa__container">
+                <div class="programa__info1">
+                    <h3>Nuestro Programa</h3>
+                    <p>En Enrot Start, Nuestro Programa de Entrenamiento Profesional está dirigido hacia un enfoque integral, orientado a la excelencia operativa, el desarollo de liderazgo y la adaptación constante a las dinámicas del mercado global.</p>
+                </div>
+                <div class="programa__info2">
+                    <h3>*Programa de Ascenso Corporativo Enrot Start*</h3>
+                    <p>A travéz de un proceso estructurado y orientado a resultados, el programa ofrece a nuestros colaboradores las heramientas, oportunidades y recursos necesarios para crecer dentro de la empresa, ocupando posiciones de mayor responsabilidad.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Contacto -->
         <section id="contacto" class="section__contacto">
             <div class="contacto__container">
                 <h2>Contacto</h2>
@@ -89,6 +114,7 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
         <footer class="footer">
             <p>&copy; Copyright: Derechos Recervados Enrot Strat 2025</p>
         </footer>
