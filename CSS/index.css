@@ -19,7 +19,7 @@ body {
 
 /* Estilos Basicos a elementos */
 
-h2 { font-size: 1.7rem;}
+h2 { font-size: 1.9rem;}
 h3 { font-size: 1.8rem;     color: rgb(180, 145, 47);}
 
 
@@ -63,7 +63,7 @@ img { max-width: 100%;}
 .videoFondo__outline {
     width: 100%;
     min-height: 100%;
-    background-color: #00000052;
+    background-color: #000000ad;
     position: absolute;
 }
 
@@ -170,6 +170,10 @@ img { max-width: 100%;}
     padding: 10px;
     color: #fff;
     font-size: 1.4rem;
+}
+
+.header__nav--list--item a:hover {
+    text-decoration: underline;
 }
 
 .header__nav__copyright {
@@ -290,8 +294,9 @@ img { max-width: 100%;}
 .hero__contactar > a {
     margin-left: 10px;
     padding: 10px 32px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid rgb(180, 145, 47);
+    border-radius: 5px;
+    color: rgb(180, 145, 47);
 }
 /* --- --- --- --- --- */
 
@@ -300,7 +305,7 @@ img { max-width: 100%;}
 @container hero (min-width: 600px){
     .hero__slogan > h2 {
         text-transform: uppercase;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
     
 }
@@ -373,6 +378,10 @@ img { max-width: 100%;}
         grid-column: 1 / 1;
         grid-row: 1 / 2;
     }
+
+    .nosotros__data p {
+        font-size: 1.2rem;
+    }
 }
 
 /* Seccion Programa */
@@ -390,6 +399,10 @@ img { max-width: 100%;}
     grid-template-columns: 1fr;
     gap: 40px;
     color: #fff;
+}
+
+.programa__container p {
+    font-size: 1.2rem;
 }
 
 /* Programa Queris */
@@ -440,7 +453,11 @@ img { max-width: 100%;}
 .footer {
     color: #fff;
     background-color: #222;
-    padding: 20px 10px;
+    padding: 24px 10px;
     display: flex;
     justify-content: center;
+}
+
+.footer p {
+    font-size: 0.9rem;
 }
