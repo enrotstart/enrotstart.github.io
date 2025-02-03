@@ -157,7 +157,7 @@ img { max-width: 100%;}
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
 }
 
 .header__nav--list {
